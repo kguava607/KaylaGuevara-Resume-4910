@@ -1,76 +1,183 @@
-body{
+body {
   margin: 0;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  background: #fff1f6; /* soft pink background */
-  color: #2b2b2b;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f8fc;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* Pink header bar */
-header{
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #f3d9e5, #f9eef3);
+  padding: 50px 20px 30px;
   text-align: center;
-  padding: 28px 16px;
-  background: #ffe4ef;
+  border-bottom: 1px solid #e6d4dd;
 }
 
-/* Make the name pop a bit */
-header h1{
+.hero-content h1 {
   margin: 0;
-  color: #7a2f4f;
-  letter-spacing: 0.5px;
+  font-size: 42px;
+  color: #5c2940;
 }
 
-header p{
-  margin: 8px 0 0 0;
+.subtitle {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #6d4a59;
 }
 
-/* Links in header */
-header a{
-  color: #7a2f4f;
-  font-weight: bold;
+.contact {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.contact a {
+  color: #5c2940;
   text-decoration: none;
+  font-weight: 600;
 }
-header a:hover{
+
+.contact a:hover {
   text-decoration: underline;
 }
 
-/* ONE centered white card for the whole resume */
-section{
-  max-width: 950px;
-  margin: 18px auto;
-  padding: 22px 26px;
+.contact span {
+  margin: 0 10px;
+  color: #888;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
   background: white;
-  border-radius: 18px;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-  border: 1px solid rgba(122,47,79,0.10);
+  padding: 14px 20px;
+  border-bottom: 1px solid #e6e6e6;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Headings */
-h2{
-  margin: 0 0 10px 0;
-  font-size: 26px;
-  color: #7a2f4f;
+.navbar a {
+  text-decoration: none;
+  color: #5c2940;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-/* Make the sub headings cleaner */
-h3, h4{
-  margin: 12px 0 6px 0;
+.navbar a:hover {
+  color: #a04670;
 }
 
-/* Replace full-width lines with a cute short divider */
-hr{
-  border: none;
-  height: 1px;
-  background: rgba(122,47,79,0.18);
-  max-width: 950px;
-  margin: 14px auto;
-  border-radius: 10px;
+/* Main layout */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-/* Optional: make bullets look nicer if you use <ul> */
-ul{
-  margin: 10px 0 0 0;
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  padding: 28px;
+  margin-bottom: 24px;
+  border: 1px solid #ececec;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #5c2940;
+  font-size: 28px;
+}
+
+h3 {
+  margin-bottom: 4px;
+  color: #2f2f2f;
+}
+
+.date {
+  font-size: 14px;
+  color: #777;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.entry {
+  margin-bottom: 22px;
+}
+
+ul {
   padding-left: 20px;
+  margin-top: 8px;
 }
-li{
-  margin: 6px 0;
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.project-card {
+  background: #faf7f9;
+  border: 1px solid #eadce3;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card a {
+  color: #8a355b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-list span {
+  background: #f3e4eb;
+  color: #5c2940;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .navbar {
+    gap: 14px;
+  }
 }
