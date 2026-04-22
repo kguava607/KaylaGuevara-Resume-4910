@@ -180,4 +180,57 @@ li {
   .navbar {
     gap: 14px;
   }
+  .recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.recipe-card {
+  background: #fff8fb;
+  border: 1px solid #efd9e4;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.recipe-card h3 {
+  margin-top: 0;
+  color: #5c2940;
+}
+
+.recipe-card p {
+  color: #555;
+}
+
+.recipe-card details {
+  margin-top: 12px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid #eee;
+}
+
+.recipe-card summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #8a355b;
+}
+
+.recipe-card h4 {
+  margin-bottom: 6px;
+  color: #5c2940;
+}
+
+.recipe-card ol {
+  padding-left: 20px;
+}
 }
