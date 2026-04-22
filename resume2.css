@@ -163,24 +163,8 @@ li {
   font-weight: 600;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  .hero-content h1 {
-    font-size: 32px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  .navbar {
-    gap: 14px;
-  }
-  .recipe-grid {
+/* Recipe page */
+.recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
@@ -233,4 +217,22 @@ li {
 .recipe-card ol {
   padding-left: 20px;
 }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .navbar {
+    gap: 14px;
+  }
 }
